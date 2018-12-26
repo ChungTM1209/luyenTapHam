@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var star1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    var star2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+    var str = prompt("Enter the star:");
+
+    function check(str) {
+
+        var test = false;
+        for (i = 0; i < star1.length; i++) {
+            if (str === star1[i]) {
+                var result = star2[i];
+                test = true;
+            }
+        }
+        if (test === true) {
+            alert("Star found: " + result);
+        } else {
+            alert("No star found");
+        }
+
+    }
+
+    check(str);
+</script>
+</body>
+</html>
